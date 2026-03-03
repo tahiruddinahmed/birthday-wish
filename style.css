@@ -778,11 +778,11 @@ canvas { position: absolute; top: 0; left: 0; z-index: 1; }
 
     .cake-container {
         transform: scale(0.75) translateX(-50%);
-        bottom: 20%;
+        bottom: 16%;
     }
 
     .cake-container.slide-up {
-        bottom: 22%;
+        bottom: 18%;
     }
 
     #balloon-layer {
