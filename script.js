@@ -25,6 +25,7 @@ const canvasEl = document.getElementById('c');
 const balloonLayer = document.getElementById('balloon-layer');
 const cardsLayer = document.getElementById('cards-layer');
 const replayBtn = document.getElementById('replay-btn');
+const mainCard = document.querySelector('.card');
 
 function pulseDigit(el) {
     if (!el) return;
@@ -160,6 +161,13 @@ function setupBalloonInteraction() {
     }
 }
 setupBalloonInteraction();
+
+// --- Card flip interaction (tap-friendly) ---
+if (mainCard) {
+    mainCard.addEventListener('click', () => {
+        mainCard.classList.toggle('is-open');
+    });
+}
 
 // Helper function for rising particles
 function startRisingAnimation() {
