@@ -1,4 +1,4 @@
-const birthdayDate = new Date("March 3, 2026 00:00:00").getTime();
+const birthdayDate = new Date("March 4, 2026 00:00:00").getTime();
 
 // Core Elements
 const countdownSection = document.getElementById('countdown-section');
