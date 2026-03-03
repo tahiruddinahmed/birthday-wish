@@ -253,6 +253,7 @@ button {
     color: white;
     border: none;
     padding: 0.9rem 1.7rem;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     border-radius: 999px;
     cursor: pointer;
@@ -633,9 +634,9 @@ canvas { position: absolute; top: 0; left: 0; z-index: 1; }
     flex-shrink: 0;
 }
 
-.card .text-container { width: 85%; height: 85%; margin: 10% auto; display: flex; flex-direction: column; justify-content: center; font-family: 'Comic Sans MS', 'Comic Sans', cursive; }
-.card .text-container .head { font-size: clamp(1.4rem, 3.4vw, 1.8rem); margin-bottom: 20px; color: #ff4f8c; font-weight: bold; text-align: center; font-family: 'Comic Sans MS', 'Comic Sans', cursive; }
-.card p { font-size: clamp(0.85rem, 2.2vw, 1rem); line-height: 1.4; color: #331717; font-style: italic; text-align: center; margin-top: 15px; font-family: 'Comic Sans MS', 'Comic Sans', cursive; }
+.card .text-container { width: 85%; height: 85%; margin: 10% auto; display: flex; flex-direction: column; justify-content: center; font-family: 'Poppins', sans-serif; }
+.card .text-container .head { font-size: clamp(1.4rem, 3.4vw, 1.8rem); margin-bottom: 20px; color: #ff4f8c; font-weight: 700; text-align: center; font-family: 'Poppins', sans-serif; }
+.card p { font-size: clamp(0.85rem, 2.2vw, 1rem); line-height: 1.6; color: #4a2030; font-style: italic; text-align: center; margin-top: 15px; font-family: 'Poppins', sans-serif; font-weight: 400; }
 
 .card .front {
     position: absolute; width: 100%; height: 100%; top: -8px; left: -8px; border: 8px solid #ff4f8c;
@@ -700,9 +701,10 @@ canvas { position: absolute; top: 0; left: 0; z-index: 1; }
 }
 
 .front-message {
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-family: 'Poppins', sans-serif;
     font-size: clamp(0.85rem, 2.2vw, 1rem);
-    line-height: 1.4;
+    font-weight: 400;
+    line-height: 1.5;
     text-align: center;
 }
 
@@ -713,6 +715,7 @@ canvas { position: absolute; top: 0; left: 0; z-index: 1; }
     min-height: 44px;
     border-radius: 999px;
     border: none;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.95rem;
     font-weight: 600;
     cursor: pointer;
