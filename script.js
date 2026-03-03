@@ -218,12 +218,14 @@ replayBtn.addEventListener('click', () => {
     }
 
     // Hide Cards & Balloons
-    cardsLayer.classList.remove('visible-layer');
+    cardsLayer.classList.remove('visible-layer', 'dark-overlay', 'cards-enter');
     cardsLayer.classList.add('hidden-layer');
-    cardsLayer.classList.remove('cards-enter');
-    balloonLayer.classList.remove('visible-layer');
+    balloonLayer.classList.remove('visible-layer', 'dark-overlay');
     balloonLayer.classList.add('hidden-layer');
     canvasEl.style.opacity = "0";
+
+    // Reset card flip state
+    if (mainCard) mainCard.classList.remove('is-open');
     
     // Reset Balloons
     for(let i=1; i<=totalBalloons; i++) {
@@ -231,11 +233,11 @@ replayBtn.addEventListener('click', () => {
         document.getElementById(`btext-${i}`).classList.remove('revealed');
     }
 
-    // Reset Animations & Opacities
+    // Reset Animations & Opacities (clear inline styles so CSS defaults take over)
     document.querySelector('.cake-container').classList.remove('slide-up');
-    document.querySelector('.cake-container').style.opacity = "1";
+    document.querySelector('.cake-container').style.opacity = "";
     document.querySelector('.hanging-photos').classList.remove('drop-down');
-    document.querySelector('.hanging-photos').style.opacity = "1";
+    document.querySelector('.hanging-photos').style.opacity = "";
     document.getElementById('candle-flame').classList.add('unlit');
 
     // Reset Interaction Prompt
