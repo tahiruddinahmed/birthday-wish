@@ -694,15 +694,15 @@ canvas { position: absolute; top: 0; left: 0; z-index: 1; }
 /* Responsive Adjustments */
 @media (max-width: 600px) {
     body {
-        align-items: flex-start;
+        align-items: center;
         height: auto;
         min-height: 100vh;
         overflow-y: auto;
     }
 
     section {
-        align-items: flex-start;
-        padding-top: 2.2rem;
+        align-items: center;
+        padding-top: 1.8rem;
         height: auto;
         min-height: 100vh;
     }
