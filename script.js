@@ -119,7 +119,7 @@ actionBtn.addEventListener('click', () => {
             balloonLayer.classList.remove('hidden-layer');
             balloonLayer.classList.add('visible-layer');
             balloonLayer.classList.add('dark-overlay'); // Darkens the background
-        }, 9000);
+        }, 15000);
     }
 });
 
