@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bg-music" src="perfect.mpeg" preload="auto"></audio>
+
+    <section id="countdown-section" class="active-screen">
+        <div class="glass-card">
+            <h1>Something Special is Coming...</h1>
+            <div id="timer">
+                <div class="time-box"><span id="days">00</span><p>Days</p></div>
+                <div class="time-box"><span id="hours">00</span><p>Hours</p></div>
+                <div class="time-box"><span id="minutes">00</span><p>Mins</p></div>
+                <div class="time-box"><span id="seconds">00</span><p>Secs</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="unlock-section" class="hidden-screen">
+        <div class="glass-card">
+            <h1>It's Time!</h1>
+            <button id="unlock-btn">Click to Open your Surprise ✨</button>
+        </div>
+    </section>
+
+    <section id="greeting-section" class="hidden-screen">
+        
+        <canvas id="c" style="opacity: 0; transition: opacity 2s;"></canvas>
+
+        <div id="interaction-layer" class="glass-card overlay-layer">
+            <h1 id="prompt-text">It's a bit dark in here...</h1>
+            <button id="action-btn">Light the Candle 🕯️</button>
+        </div>
+
+        <div class="hanging-photos">
+            <div class="hanging-item drop-1">
+                <div class="string"></div>
+                <div class="polaroid"><img src="photo2.jpeg" alt="Memory 1"></div>
+            </div>
+            <div class="hanging-item drop-2">
+                <div class="string" style="height: 60px;"></div>
+                <div class="polaroid"><img src="photo 3.jpeg" alt="Memory 2"></div>
+            </div>
+            <div class="hanging-item drop-3">
+                <div class="string" style="height: 30px;"></div>
+                <div class="polaroid"><img src="photo 4.jpeg" alt="Memory 3"></div>
+            </div>
+        </div>
+
+        <div class="cake-container">
+            <div class="candle">
+                <div class="flame unlit" id="candle-flame"></div>
+            </div>
+            <div class="cake-top"></div>
+            <div class="cake-bottom"></div>
+        </div>
+
+        <div id="balloon-layer" class="hidden-layer">
+            <div class="balloon-panel">
+                <h1>Pop all 4 balloons</h1>
+                <div class="balloons-wrapper">
+                    <div class="balloon-container">
+                        <div class="balloon balloon-pink" id="balloon-1"></div>
+                        <div class="balloon-text" id="btext-1">YOU</div>
+                    </div>
+                    <div class="balloon-container">
+                        <div class="balloon balloon-cream" id="balloon-2"></div>
+                        <div class="balloon-text" id="btext-2">ARE</div>
+                    </div>
+                    <div class="balloon-container">
+                        <div class="balloon balloon-peach" id="balloon-3"></div>
+                        <div class="balloon-text" id="btext-3">CUTE</div>
+                    </div>
+                    <div class="balloon-container">
+                        <div class="balloon balloon-purple" id="balloon-4"></div>
+                        <div class="balloon-text" id="btext-4">💖</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cards-layer" class="hidden-layer">
+            <div class="cards-wrapper">
+                <div class="card">
+                    <div class="back"></div>
+                    <div class="front">
+                        <div class="imgset">
+                            <img width="100%" src="photo 4.jpeg" alt="Card Cover 2">
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p class="head">To New Beginnings</p>
+                        <p>I am really glad we crossed paths recently. Looking forward to making more memories.</p>
+                        <p>Cheers to you!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="replay-btn">Replay the Magic 🔄</button>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
